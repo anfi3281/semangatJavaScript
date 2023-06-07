@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Tipe Data</title>
+</head>
+
+<body>
+    <h1>Belajar Tipe Data</h1>
+
+    <!-- id hasil -->
+    <div id="hasil"></div>
+    <div id="kalimat"></div>
+    <div id="hewan"></div>
+    <div id="manusia"></div>
+
+    <script>
+        // tipe data number
+        var angka = 80;
+        // String
+        var kalimat = "Belajar tipe data";
+        // Array
+        var hewan = ["kambing", "Bebek", "Ayam"];
+        // Tipe data object
+        var manusia = {
+            nama : "Randi Afif",
+            alamat : "Pekalongan",
+            umur : 30,
+            pekerjaan : "programmer",
+        }
+
+        // menampilkan tipe data number pada element
+        document.getElementById("hasil").innerHTML = angka;
+        document.getElementById("kalimat").innerHTML = kalimat;
+        document.getElementById("hewan").innerHTML = hewan[1];
+        document.getElementById("manusia").innerHTML = manusia.nama + " tinggal di " + manusia.alamat + " umur " + manusia.umur + " dan pekerjaan " + manusia.pekerjaan;
+    </script>
+</body>
+
+</html>
