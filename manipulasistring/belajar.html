@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulasi String</title>
+</head>
+
+<body>
+    <h1>Belajar manipulasi string</h1>
+
+    <p id='contoh'></p>
+    <p id='temukan'></p>
+    <p id='cari'></p>
+    <p id='potong'></p>
+    <p id='ganti'></p>
+    <p id='besar'></p>
+    <p id='kecil'></p>
+    <p id='gabungkan'></p>
+    <p id='pisahkan'></p>
+
+    <script>
+        var kalimat = "saya belajar javascript";
+        var temukan = kalimat.indexOf("belajar");
+        var cari = kalimat.search("saya");
+        var potong = kalimat.slice(2, 4);
+        var ganti = kalimat.replace("saya", "kamu");
+        var besar = kalimat.toUpperCase();
+        var kecil = kalimat.toLowerCase();
+        var a = "Randi Afif";
+        var b = "Semangat";
+        var c = "a,b,c";
+        var gabungkan = a.concat(" ", b);
+        var pisahkan = c.split(",");
+
+        document.getElementById('contoh').innerHTML = kalimat;
+        document.getElementById('temukan').innerHTML = temukan;
+        document.getElementById('cari').innerHTML = cari;
+        document.getElementById('potong').innerHTML = potong;
+        document.getElementById('ganti').innerHTML = ganti;
+        document.getElementById('besar').innerHTML = besar;
+        document.getElementById('kecil').innerHTML = kecil;
+        document.getElementById('gabungkan').innerHTML = gabungkan;
+        document.getElementById('pisahkan').innerHTML = pisahkan[0];
+    </script>
+</body>
+
+</html>
