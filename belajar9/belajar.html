@@ -11,9 +11,12 @@
 <body>
     <h1>Belajar JavaScript</h1>
 
+    <button id="klik" onclick="tampilkan_nama()"> klik disini </button>
     <div id="nama"></div>
     <script>
-        document.getElementById("nama").innerHTML = "Halo, nama aku Randi Afif";
+        function tampilkan_nama() {
+            document.getElementById("nama").innerHTML = "Halo, nama aku Randi Afif";
+        }
     </script>
 </body>
 
