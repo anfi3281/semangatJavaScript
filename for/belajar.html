@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For</title>
+</head>
+
+<body>
+    <h1>For</h1>
+    <button onclick="perulangan()">Tombol</button>
+    <!-- hasil -->
+    <div id="hasil"></div>
+
+    <script>
+        function perulangan() {
+            var text = "";
+            var x;
+            for (x = 0; x <= 10; x++) {
+                // text += "Angka " + x + "<br>";
+                text += "<input type='input' name="+x+"></input>"+"<br>";
+            }
+            document.getElementById("hasil").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>
